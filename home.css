@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background: linear-gradient(#fff, #434343);
+}
+
+.container{
+    background: white;
+    height: 100vw;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+header {
+    background: white;
+    width: 100%;
+    height: 10vw;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+header.imagem1{
+    position: absolute;
+    padding: 200px;
+}
+
+header.imagem2{
+    position: absolute
+    width: 100%;
+}
+
+nav{
+    background: #000000;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    position: -webkit-sticky;
+    z-index: 999;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+
+.imagem1 img{
+    position: absolute;
+    height: 80%;
+    width: 10%;
+    
+}
+.imagem2 img{
+    position: absolute;
+    height: 80%;
+    width: 10%;
+    margin-left: 42%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+   
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    transition: all 0.3s ease-out;
+   
+}
+.card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card h2{
+    width: 100%;
+    height: 25%;
+}
+
+.card p{
+    color: #a3a3a3;
+    font-size: 16px;
+    height: 15%;
+    
+}
+
+
+.image {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+     
+}
+
+.azul {
+    border-left: 3px solid #0848a3;
+}
+
+.verde {
+    border-left: 3px solid #078115;  
+}
+
+.vermelho{
+    border-left: 3px solid #d10d1d;    
+}
+
+.amarelo{
+    border-left: 3px solid #F1C40F;
+}
+
+footer{
+    margin-top: 150px;
+    bottom: 0;
+    background-color: blue;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+@media (max-width: 1113px) {
+    .row{
+        flex-direction: column;
+    }
+    header .imagem1{
+        display: none;
+
+    }
+    header .imagem2{
+        display:none
+    }
+    .container{
+        height: 100%;
+    }
+    .card{
+       max-width: 100%;
+       max-height: 100%;
+    }
+    .image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .imagem img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: -25%;
+        
+    }
+    main .conteudo{
+        width: 100%;
+        height: 100%;
+        margin-left: 8%;
+    }
+    
+}
+
+@media (max-width: 920px) {
+    main .conteudo{
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 555px) {
+    main .conteudo{
+        margin-left: 20%;
+    }
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    
+}
+
+main .imagem{
+    margin-left: 100px;
+}
+
+main .conteudo{
+    text-align: justify;
+    margin-right: 200px;
+    padding-left: 120px;
+
+}
+
+.imagem img{
+    width: 200px;
+    height: 200px;
+}
+
+h1{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+   
